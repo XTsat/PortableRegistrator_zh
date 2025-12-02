@@ -176,7 +176,7 @@ namespace PortableRegistrator
                 {
                     MessageBoxEx.Show(this,
                         $"{tbxProgramName.Text} 注册成功！{Environment.NewLine}" +
-                        $"现在应用可以快捷打开了》 :)",
+                        $"现在应用可以快捷打开了 :)",
                         "注册",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
