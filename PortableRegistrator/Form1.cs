@@ -175,19 +175,19 @@ namespace PortableRegistrator
                 if (errors.Count == 0)
                 {
                     MessageBoxEx.Show(this,
-                        $"{tbxProgramName.Text} successfully registered!{Environment.NewLine}" +
-                        $"Have fun and enjoy. ;)",
-                        "REGISTER",
+                        $"{tbxProgramName.Text} 注册成功！{Environment.NewLine}" +
+                        $"现在应用可以快捷打开了》 :)",
+                        "注册",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
                 else
                 {
                     MessageBoxEx.Show(this,
-                        $"Registration of '{tbxProgramName.Text}' unsuccessful!{Environment.NewLine}" +
-                        $"Errors: {Environment.NewLine}" +
+                        $"注册 '{tbxProgramName.Text}' 失败！{Environment.NewLine}" +
+                        $"错误： {Environment.NewLine}" +
                         $"{string.Join(Environment.NewLine, errors.ToArray())}",
-                        "REGISTER",
+                        "注册",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
@@ -221,17 +221,17 @@ namespace PortableRegistrator
                 if (errors.Count == 0)
                 {
                     MessageBoxEx.Show(this,
-                        $"{tbxProgramName.Text} got successfully unregistered.",
-                        "UNREGISTER",
+                        $"{tbxProgramName.Text} 取消注册成功.",
+                        "取消注册",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
                 else
                 {
                     MessageBoxEx.Show(this,
-                        $"Deleting registration of '{tbxProgramName.Text}' unsuccessful. See Errors: {Environment.NewLine}" +
+                        $"取消注册 '{tbxProgramName.Text}' 失败。查看错误： {Environment.NewLine}" +
                         $"{string.Join(Environment.NewLine, errors.ToArray())}",
-                        "UNREGISTER",
+                        "取消注册",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
@@ -308,9 +308,9 @@ namespace PortableRegistrator
         private void btnUnregister_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBoxEx.Show(this,
-                $"Are you sure to delete the registration for {Environment.NewLine}" +
-                $"'{cbRegisteredPortables.Text}'?",
-                "UNREGISTER",
+                $"您确定要取消注册 {Environment.NewLine}" +
+                $"'{cbRegisteredPortables.Text}' 吗?",
+                "取消注册",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
