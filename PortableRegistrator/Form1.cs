@@ -131,12 +131,12 @@ namespace PortableRegistrator
         private void OpenConfig()
         {
             MessageBoxEx.Show(this,
-                "Here you can setup the used Program Types." + Environment.NewLine + Environment.NewLine +
-                "Please restart the program after changing the configuration!" + Environment.NewLine +
-                "Also think about to register your Portable again." + Environment.NewLine +
-                "Be very careful with the configuration, you can mess up the registry." + Environment.NewLine + Environment.NewLine +
-                "If you need a fresh configuration file, just delete it and restart the tool." + Environment.NewLine + Environment.NewLine +
-                "Greetings from the developer. ;)",
+                "您可以在此处设置所使用的程序类型。" + Environment.NewLine + Environment.NewLine +
+                "更改配置后请重新启动程序！" + Environment.NewLine +
+                "还要考虑再次注册您的便携式设备。" + Environment.NewLine +
+                "配置时要非常小心，否则可能会弄乱注册表。" + Environment.NewLine + Environment.NewLine +
+                "如果您需要新的配置文件，只需将其删除并重新启动该工具即可。" + Environment.NewLine + Environment.NewLine +
+                "来自开发者的问候 :)",
                 "HINTS",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -271,7 +271,7 @@ namespace PortableRegistrator
                 {
                     _config.AppTypes.Add(dialog.AppType);
                     _config.Save();
-                    MessageBoxEx.Show($"New Program-Type '{dialog.AppType}' created.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBoxEx.Show($"新程序类型 '{dialog.AppType}' 已创建.", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     SetProgramTypes();
                 }
             }
@@ -283,8 +283,8 @@ namespace PortableRegistrator
             {
                 var progType = cbProgramType.SelectedItem.ToString();
                 DialogResult dialogResult = MessageBoxEx.Show(this,
-                    "Do you really want to permanently delete Program-Type: " + Environment.NewLine + $"'{progType}' ?",
-                    "Delete Program-Type",
+                    "您确实要永久删除程序类型： " + Environment.NewLine + $"'{progType}' ?",
+                    "删除程序类型",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
@@ -355,11 +355,11 @@ namespace PortableRegistrator
             if (_removePortableSuffix)
             {
                 DialogResult dialogResult = MessageBoxEx.Show(this,
-                    "This option removes the 'PORTABLE' Suffix from the registration entry." + Environment.NewLine +
-                    "Then PortableRegistrator cannot detect this registry entry anymore! " + Environment.NewLine + Environment.NewLine +
-                    "Just leave this option, if you are a power user!" + Environment.NewLine +
-                    "This is NOT recommended for default use!",
-                    "!!!ATTENTION!!!",
+                    "此选项从注册条目中删除“PORTABLE”后缀。" + Environment.NewLine +
+                    "然后 PortableRegistrator 无法再检测到该注册表项！ " + Environment.NewLine + Environment.NewLine +
+                    "如果您是高级用户，请保留此选项！" + Environment.NewLine +
+                    "不建议默认使用！",
+                    "!!!注意!!!",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
@@ -388,5 +388,149 @@ namespace PortableRegistrator
 
         #endregion
 
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPortableSuffix_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblURLAssociations_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPropertiesParameter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOpenParameters_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblFileAssociations_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/XTsat/PortableRegistrator_zh");
+        }
     }
 }

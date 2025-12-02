@@ -175,8 +175,17 @@ namespace PortableRegistratorCommon
                 ".tta",".wav",".weba",".wma",".wv",},
             };
             config.AppTypes.Add(music);
-
+            
             var zip = new AppType("压缩软件")
+            {
+                PropertiesParameter = null,
+                OpenParameters = "\"%1\"",
+                FileAssociations = new List<string>() {
+                ".7z",".7zip",".zip",".rar",".gz",".cab",".tar",},
+            };
+            config.AppTypes.Add(zip);
+
+            var zippp = new AppType("压缩软件-高级")
             {
                 PropertiesParameter = null,
                 OpenParameters = "\"%1\"",
@@ -184,7 +193,7 @@ namespace PortableRegistratorCommon
                 ".7z",".7zip",".zip",".zipx",".rar",".gz",".gzip",".cab",".001",
                 ".tar",".bz2",".bzip2",".tbz",".vhd",".vhdx",".iso",".esd",".wim",".dmg",".zst",},
             };
-            config.AppTypes.Add(zip);
+            config.AppTypes.Add(zippp);
 
             return config;
         }
