@@ -54,7 +54,7 @@ namespace PortableRegistrator.Controls
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(112, 37);
             this.btnOK.TabIndex = 11;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -67,7 +67,7 @@ namespace PortableRegistrator.Controls
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(112, 37);
             this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -78,7 +78,7 @@ namespace PortableRegistrator.Controls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 21);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Program Name:";
+            this.label3.Text = "程序名称:";
             // 
             // tbxProgramName
             // 
@@ -98,7 +98,7 @@ namespace PortableRegistrator.Controls
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 21);
             this.label1.TabIndex = 4;
-            this.label1.Text = "File Associations:";
+            this.label1.Text = "文件关联：";
             // 
             // tbxFileAssociations
             // 
@@ -118,7 +118,7 @@ namespace PortableRegistrator.Controls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 21);
             this.label2.TabIndex = 7;
-            this.label2.Text = "URL Associations:";
+            this.label2.Text = "URL 关联：";
             // 
             // tbxUrlAssociations
             // 
@@ -138,7 +138,7 @@ namespace PortableRegistrator.Controls
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 21);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Open Parameters:";
+            this.label4.Text = "打开参数：";
             // 
             // tbxOpenParameters
             // 
@@ -159,7 +159,7 @@ namespace PortableRegistrator.Controls
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 45);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Each line \r\none Extension\r\nwith leading \'.\'";
+            this.label5.Text = "每行一个扩展名，\r\n以 `.` 开头。";
             // 
             // label6
             // 
@@ -170,7 +170,7 @@ namespace PortableRegistrator.Controls
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 30);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Each line \r\none URL";
+            this.label6.Text = "每行一个 URL";
             // 
             // label7
             // 
@@ -180,7 +180,7 @@ namespace PortableRegistrator.Controls
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 21);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Properties Parameters:";
+            this.label7.Text = "属性参数:";
             // 
             // tbxPropertiesParameters
             // 
@@ -222,7 +222,7 @@ namespace PortableRegistrator.Controls
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Add new Program-Type";
+            this.Text = "添加新的程序类型";
             this.ResumeLayout(false);
             this.PerformLayout();
 
