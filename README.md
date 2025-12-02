@@ -1,120 +1,48 @@
-﻿# PORTABLE Registrator
-### for Windows 7, 8, 10 (untested 11)
+﻿# 便携软件注册器 (PORTABLE Registrator)
 
-Also got into trouble using your favorite browser or mail program on a pendrive?
-Then this one is for you!
+![Home image](<docs/image/PortableRegistrator v1.6 zh.png>)
 
-Easily register any portable app as a default program in Windows.
-This will allow you to directly open weblinks (http/https URLs) with the portable browser of your choice. 
+---
 
-![image](https://user-images.githubusercontent.com/694970/231512951-df8c9e3e-7a09-42b1-8f67-fd78b084b571.png)
+还在为 U 盘里的浏览器、邮件程序无法快速使用而烦恼？
 
-### Configuration
+这款工具正是为你量身打造！
 
-#### Default
-On the first start a configuration file is being generated to provide default settings for the AppTypes.
+轻松将任何便携式应用程序注册为 Windows 中的默认程序。
 
-The default available AppType are:
+这将允许您使用您选择的便携式浏览器直接打开网络链接。
 
-```
-<?xml version="1.0"?>
-<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <AppTypes>
-    <AppType>
-      <Name>Web-Browser</Name>
-      <OpenParameters>-url "%1"</OpenParameters>
-      <FileAssociations>
-        <string>.htm</string>
-        <string>.html</string>
-        <string>.shtml</string>
-        <string>.xht</string>
-        <string>.xhtml</string>
-      </FileAssociations>
-      <URLAssociations>
-        <string>http</string>
-        <string>https</string>
-        <string>ftp</string>
-      </URLAssociations>
-    </AppType>
-    <AppType>
-      <Name>Mail-Program</Name>
-      <OpenParameters>"%1"</OpenParameters>
-      <FileAssociations>
-        <string>.xpi</string>
-        <string>.eml</string>
-        <string>.msg</string>
-        <string>.ics</string>
-        <string>.mbox</string>
-      </FileAssociations>
-      <URLAssociations>
-        <string>mailto</string>
-      </URLAssociations>
-    </AppType>
-  </AppTypes>
-</Configuration>
-```
+## 功能概述
 
-To be as flexible as possible, you can extend any kind of application within the configuration file.
-For any app specific needs, other than browser or mail, try adding a new "AppType" section there.
+这是一款专为便携式应用设计的轻量级工具，核心功能包括：
 
-#### Example
-```
-<?xml version="1.0"?>
-<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <AppTypes>
-  
-    ... (other AppType elements)
-    
-    <AppType>
-      <Name>Image-Viewer</Name>                           <--- 1.
-      <OpenParameters>-parameter "%1"</OpenParameters>    <--- 2. 
-      <FileAssociations>
-        <string>.jpg</string>                             <--- 3.
-        <string>.gif</string>
-        <string>...</string>
-      </FileAssociations>
-      <URLAssociations>
-        <string>view</string>                             <--- 4.
-      </URLAssociations>
-    </AppType>
-    
-  </AppTypes>
-</Configuration>
-```
-#### Steps
-1. Name the new AppType
-1. Set the supported open parameter of the program (`%1` passes the parameter to the portable executable)
-3. Register all file associations
-1. Register all URL associations, if not needed remove the lines inbetween
+- 注册 / 注销文件类型关联
+- 注册 / 注销自定义 URL 协议
+- 无需系统重启，变更即时生效
+- 支持干净卸载，无残留注册表项
+- 完全便携，无需安装，可直接运行
 
-At best copy a full AppType section and edit it to your needs.
+## 适用场景
 
-Possibly not every software will work, but give it a shot and share your experience.
+- 便携式应用需要关联文件类型或协议，但无法获取管理员权限
+- 临时使用的工具，不想修改系统全局配置
+- 多用户环境下，仅需为当前用户配置关联
+- 开发测试阶段，快速验证文件关联 / 协议注册功能
 
-You can use the ADD Button to easily add new Program-Types.
-After manual editing the Reset-Button will now also reloads the Configuration file and repopulate the Program-Types.
+## 贡献
 
-CLI-SUPPORT:
-------------------------
+欢迎在 Issues 中分享你为更多应用编写自定义配置，我会将其整合到软件内置配置中。谢谢大家！
 
-AppTypes can be printed out from the existing configuration file, by simply giving a string to search for a AppType's name.
+### 鸣谢
 
-Check `PortableRegistratorCLI.exe /?` for more info.
+- 项目来源
+  - [SiL3NC3/PortableRegistrator](https://github.com/SiL3NC3/PortableRegistrator)
+- 灵感来自
+  - [Register Firefox Portable with Default Apps or Default Programs in Windows](https://www.winhelponline.com/blog/register-firefox-portable-with-default-programs-in-vista/)
+- 应用程序图标
+  - [iconarchive](https://iconarchive.com/show/3d-bluefx-desktop-icons-by-wallpaperfx/Usb-icon.html) `CC BY 4.0`
+  - [Backlink](http://www.wallpaperfx.com)
 
-Have fun and enjoy.
+### 教程
 
-#### CONTRIBUTION:
-Please post your custom configs for implementing more standard apps under issues, so I can add them to the repo.
-Thank you, guys.
-
-#### CREDITS:
-
-###### App Icon:
-https://iconarchive.com/show/3d-bluefx-desktop-icons-by-wallpaperfx/Usb-icon.html
-Backlink: http://www.wallpaperfx.com
-
-###### Inspired by:
-https://www.winhelponline.com/blog/register-firefox-portable-with-default-programs-in-vista/
-
-###### German tutorial by DeskModder.de: (Thank you!)
-https://www.deskmodder.de/blog/2022/04/01/portable-registrator-portable-browser-mail-oder-andere-programme-als-standard-setzen-koennen
+[德语 DeskModder.de](https://www.deskmodder.de/blog/2022/04/01/portable-registrator-portable-browser-mail-oder-andere-programme-als-standard-setzen-koennen)
