@@ -77,7 +77,7 @@ namespace PortableRegistrator.Controls
                 }
                 catch (Exception)
                 {
-                    MessageBoxEx.Show("An unexpected Error occurred." + Environment.NewLine + "Cannot create Program-Type.");
+                    MessageBoxEx.Show("发生意外错误。" + Environment.NewLine + "无法创建程序类型");
                     DialogResult = DialogResult.None;
                 }
             }
