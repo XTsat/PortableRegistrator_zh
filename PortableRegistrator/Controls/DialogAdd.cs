@@ -77,7 +77,13 @@ namespace PortableRegistrator.Controls
                 }
                 catch (Exception)
                 {
-                    MessageBoxEx.Show("发生意外错误。" + Environment.NewLine + "无法创建程序类型");
+                    string msg = PortableRegistrator.Properties.Resources.msgErrorProgramType;
+
+                    string message = $"{msg}{Environment.NewLine}";
+
+                    MessageBoxEx.Show(
+                        message
+                        );
                     DialogResult = DialogResult.None;
                 }
             }

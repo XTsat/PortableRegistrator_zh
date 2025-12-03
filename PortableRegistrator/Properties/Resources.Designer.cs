@@ -61,6 +61,531 @@ namespace PortableRegistrator.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Add new Program-Type 的本地化字符串。
+        /// </summary>
+        internal static string AddProgramTypeTitle {
+            get {
+                return ResourceManager.GetString("AddProgramTypeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Made with 💙 for Portable Software - Source code and release available at \r\n 的本地化字符串。
+        /// </summary>
+        internal static string AuthorRemarks {
+            get {
+                return ResourceManager.GetString("AuthorRemarks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 i18n support provided by 的本地化字符串。
+        /// </summary>
+        internal static string AuthorRemarks2 {
+            get {
+                return ResourceManager.GetString("AuthorRemarks2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 ADD 的本地化字符串。
+        /// </summary>
+        internal static string btnAdd {
+            get {
+                return ResourceManager.GetString("btnAdd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 CONFIG 的本地化字符串。
+        /// </summary>
+        internal static string btnConfig {
+            get {
+                return ResourceManager.GetString("btnConfig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 REGISTER 的本地化字符串。
+        /// </summary>
+        internal static string btnRegister {
+            get {
+                return ResourceManager.GetString("btnRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 X 的本地化字符串。
+        /// </summary>
+        internal static string btnRemoveAppType {
+            get {
+                return ResourceManager.GetString("btnRemoveAppType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 RESET 的本地化字符串。
+        /// </summary>
+        internal static string btnReset {
+            get {
+                return ResourceManager.GetString("btnReset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 UNREGISTER 的本地化字符串。
+        /// </summary>
+        internal static string btnUnregister {
+            get {
+                return ResourceManager.GetString("btnUnregister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Cancel 的本地化字符串。
+        /// </summary>
+        internal static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 FileAssociations: 的本地化字符串。
+        /// </summary>
+        internal static string FileAssociations {
+            get {
+                return ResourceManager.GetString("FileAssociations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Each line
+        ///one Extension
+        ///with leading \&apos;.\&apos; 的本地化字符串。
+        /// </summary>
+        internal static string FileAssociationsHint {
+            get {
+                return ResourceManager.GetString("FileAssociationsHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 SiL3NC3/PortableRegistrator 的本地化字符串。
+        /// </summary>
+        internal static string GitHub1 {
+            get {
+                return ResourceManager.GetString("GitHub1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 XTsat/PortableRegistrator_zh 的本地化字符串。
+        /// </summary>
+        internal static string GitHub2 {
+            get {
+                return ResourceManager.GetString("GitHub2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PORTABLE REGISTRATOR 的本地化字符串。
+        /// </summary>
+        internal static string MainTitle {
+            get {
+                return ResourceManager.GetString("MainTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Delete Program-Type 的本地化字符串。
+        /// </summary>
+        internal static string msgDeleteProgramType {
+            get {
+                return ResourceManager.GetString("msgDeleteProgramType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Do you really want to permanently delete Program-Type: 的本地化字符串。
+        /// </summary>
+        internal static string msgDeleteProgramType1 {
+            get {
+                return ResourceManager.GetString("msgDeleteProgramType1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An Error occurred :( 的本地化字符串。
+        /// </summary>
+        internal static string msgErrorOccurred {
+            get {
+                return ResourceManager.GetString("msgErrorOccurred", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An unexpected Error occurred. &apos;{0}&apos; Cannot create Program-Type. 的本地化字符串。
+        /// </summary>
+        internal static string msgErrorProgramType {
+            get {
+                return ResourceManager.GetString("msgErrorProgramType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 HINTS 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS {
+            get {
+                return ResourceManager.GetString("msgHINTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Here you can setup the used Program Types. 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS1 {
+            get {
+                return ResourceManager.GetString("msgHINTS1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Please restart the program after changing the configuration! 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS2 {
+            get {
+                return ResourceManager.GetString("msgHINTS2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Also think about to register your Portable again. 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS3 {
+            get {
+                return ResourceManager.GetString("msgHINTS3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Be very careful with the configuration, you can mess up the registry. 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS4 {
+            get {
+                return ResourceManager.GetString("msgHINTS4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 If you need a fresh configuration file, just delete it and restart the tool. 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS5 {
+            get {
+                return ResourceManager.GetString("msgHINTS5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Greetings from the developer. ;) 的本地化字符串。
+        /// </summary>
+        internal static string msgHINTS6 {
+            get {
+                return ResourceManager.GetString("msgHINTS6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 New Program-Type &apos;{0}&apos; created. 的本地化字符串。
+        /// </summary>
+        internal static string msgNewProgramType {
+            get {
+                return ResourceManager.GetString("msgNewProgramType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 REGISTER 的本地化字符串。
+        /// </summary>
+        internal static string msgRegister {
+            get {
+                return ResourceManager.GetString("msgRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 successfully registered! 的本地化字符串。
+        /// </summary>
+        internal static string msgRegister1 {
+            get {
+                return ResourceManager.GetString("msgRegister1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Have fun and enjoy. ;) 的本地化字符串。
+        /// </summary>
+        internal static string msgRegister2 {
+            get {
+                return ResourceManager.GetString("msgRegister2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Registration of &apos;{0}&apos; unsuccessful! 的本地化字符串。
+        /// </summary>
+        internal static string msgRegister3 {
+            get {
+                return ResourceManager.GetString("msgRegister3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Errors: 的本地化字符串。
+        /// </summary>
+        internal static string msgRegister4 {
+            get {
+                return ResourceManager.GetString("msgRegister4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Success 的本地化字符串。
+        /// </summary>
+        internal static string msgSuccess {
+            get {
+                return ResourceManager.GetString("msgSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 !!!ATTENTION!!! 的本地化字符串。
+        /// </summary>
+        internal static string msgSuffix {
+            get {
+                return ResourceManager.GetString("msgSuffix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 This option removes the &apos;PORTABLE&apos; Suffix from the registration entry. 的本地化字符串。
+        /// </summary>
+        internal static string msgSuffix1 {
+            get {
+                return ResourceManager.GetString("msgSuffix1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Then PortableRegistrator cannot detect this registry entry anymore! 的本地化字符串。
+        /// </summary>
+        internal static string msgSuffix2 {
+            get {
+                return ResourceManager.GetString("msgSuffix2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Just leave this option, if you are a power user! 的本地化字符串。
+        /// </summary>
+        internal static string msgSuffix3 {
+            get {
+                return ResourceManager.GetString("msgSuffix3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 This is NOT recommended for default use! 的本地化字符串。
+        /// </summary>
+        internal static string msgSuffix4 {
+            get {
+                return ResourceManager.GetString("msgSuffix4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 UNREGISTER 的本地化字符串。
+        /// </summary>
+        internal static string msgUnRegister {
+            get {
+                return ResourceManager.GetString("msgUnRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 got successfully unregistered. 的本地化字符串。
+        /// </summary>
+        internal static string msgUnRegister1 {
+            get {
+                return ResourceManager.GetString("msgUnRegister1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Deleting registration of &apos;{0}&apos; unsuccessful. See Errors: 的本地化字符串。
+        /// </summary>
+        internal static string msgUnRegister2 {
+            get {
+                return ResourceManager.GetString("msgUnRegister2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Are you sure to delete the registration for &apos;{0}&apos; &apos;{1}&apos; ? 的本地化字符串。
+        /// </summary>
+        internal static string msgUnRegister3 {
+            get {
+                return ResourceManager.GetString("msgUnRegister3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 new System.Drawing.Size(95, 21) 的本地化字符串。
+        /// </summary>
+        internal static string NewSystemDrawingSize9521 {
+            get {
+                return ResourceManager.GetString("NewSystemDrawingSize9521", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 OK 的本地化字符串。
+        /// </summary>
+        internal static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 OpenParameter: 的本地化字符串。
+        /// </summary>
+        internal static string OpenParameter {
+            get {
+                return ResourceManager.GetString("OpenParameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Portable executable 的本地化字符串。
+        /// </summary>
+        internal static string PortableExecutable {
+            get {
+                return ResourceManager.GetString("PortableExecutable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PORTABLE\&quot; 的本地化字符串。
+        /// </summary>
+        internal static string PortableSuffix {
+            get {
+                return ResourceManager.GetString("PortableSuffix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Program Name: 的本地化字符串。
+        /// </summary>
+        internal static string ProgramName {
+            get {
+                return ResourceManager.GetString("ProgramName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Program Type: 的本地化字符串。
+        /// </summary>
+        internal static string ProgramType {
+            get {
+                return ResourceManager.GetString("ProgramType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Program Types setup 的本地化字符串。
+        /// </summary>
+        internal static string ProgramTypes {
+            get {
+                return ResourceManager.GetString("ProgramTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PropertiesParameter: 的本地化字符串。
+        /// </summary>
+        internal static string PropertiesParameter {
+            get {
+                return ResourceManager.GetString("PropertiesParameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Registered Portables: 的本地化字符串。
+        /// </summary>
+        internal static string RegisteredPortables {
+            get {
+                return ResourceManager.GetString("RegisteredPortables", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Register a new portable app 的本地化字符串。
+        /// </summary>
+        internal static string RegisterPortableApp {
+            get {
+                return ResourceManager.GetString("RegisterPortableApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 remove Suffix 的本地化字符串。
+        /// </summary>
+        internal static string RemoveSuffix {
+            get {
+                return ResourceManager.GetString("RemoveSuffix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PORTABLE Registrator 的本地化字符串。
+        /// </summary>
+        internal static string SoftwareName {
+            get {
+                return ResourceManager.GetString("SoftwareName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Unregister portable App 的本地化字符串。
+        /// </summary>
+        internal static string UnregisterPortableApp {
+            get {
+                return ResourceManager.GetString("UnregisterPortableApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 URLAssociations: 的本地化字符串。
+        /// </summary>
+        internal static string URLAssociations {
+            get {
+                return ResourceManager.GetString("URLAssociations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Each line
+        ///one URL 的本地化字符串。
+        /// </summary>
+        internal static string URLAssociationsHint {
+            get {
+                return ResourceManager.GetString("URLAssociationsHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap Wallpaperfx_3d_Bluefx_Desktop_Usb {

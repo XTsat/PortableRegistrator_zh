@@ -89,7 +89,7 @@ namespace PortableRegistrator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 21);
             this.label1.TabIndex = 2;
-            this.label1.Text = "程序位置：";
+            this.label1.Text = PortableRegistrator.Properties.Resources.PortableExecutable;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnRegister
@@ -100,7 +100,7 @@ namespace PortableRegistrator
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(124, 34);
             this.btnRegister.TabIndex = 9;
-            this.btnRegister.Text = "注册";
+            this.btnRegister.Text = PortableRegistrator.Properties.Resources.btnRegister;
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
@@ -124,7 +124,7 @@ namespace PortableRegistrator
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 21);
             this.label2.TabIndex = 5;
-            this.label2.Text = "程序类型：";
+            this.label2.Text = PortableRegistrator.Properties.Resources.ProgramType;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -135,7 +135,7 @@ namespace PortableRegistrator
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 21);
             this.label3.TabIndex = 7;
-            this.label3.Text = "程序名称：";
+            this.label3.Text = PortableRegistrator.Properties.Resources.ProgramName;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tbxProgramName
@@ -156,7 +156,7 @@ namespace PortableRegistrator
             this.labelPortableSuffix.Name = "labelPortableSuffix";
             this.labelPortableSuffix.Size = new System.Drawing.Size(88, 21);
             this.labelPortableSuffix.TabIndex = 14;
-            this.labelPortableSuffix.Text = "PORTABLE\"";
+            this.labelPortableSuffix.Text = PortableRegistrator.Properties.Resources.PortableSuffix;
             this.labelPortableSuffix.Click += new System.EventHandler(this.labelPortableSuffix_Click);
             // 
             // cbRegisteredPortables
@@ -182,7 +182,7 @@ namespace PortableRegistrator
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 21);
             this.label5.TabIndex = 16;
-            this.label5.Text = "已注册程序：";
+            this.label5.Text = PortableRegistrator.Properties.Resources.RegisteredPortables;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel1
@@ -208,7 +208,7 @@ namespace PortableRegistrator
             this.btnUnregister.Name = "btnUnregister";
             this.btnUnregister.Size = new System.Drawing.Size(124, 34);
             this.btnUnregister.TabIndex = 34;
-            this.btnUnregister.Text = "取消注册";
+            this.btnUnregister.Text = PortableRegistrator.Properties.Resources.btnUnregister;
             this.btnUnregister.UseVisualStyleBackColor = true;
             this.btnUnregister.Click += new System.EventHandler(this.btnUnregister_Click);
             // 
@@ -222,7 +222,7 @@ namespace PortableRegistrator
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(220, 30);
             this.label9.TabIndex = 20;
-            this.label9.Text = "注销便携式应用程序";
+            this.label9.Text = PortableRegistrator.Properties.Resources.UnregisterPortableApp;
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
@@ -245,7 +245,7 @@ namespace PortableRegistrator
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(266, 30);
             this.label8.TabIndex = 0;
-            this.label8.Text = "注册新的便携式应用程序";
+            this.label8.Text = PortableRegistrator.Properties.Resources.RegisterPortableApp;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -281,7 +281,7 @@ namespace PortableRegistrator
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(88, 17);
             this.label11.TabIndex = 25;
-            this.label11.Text = "文件关联：";
+            this.label11.Text = PortableRegistrator.Properties.Resources.FileAssociations;
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
@@ -294,7 +294,7 @@ namespace PortableRegistrator
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(83, 17);
             this.label12.TabIndex = 26;
-            this.label12.Text = "URL 关联：";
+            this.label12.Text = PortableRegistrator.Properties.Resources.URLAssociations;
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
@@ -322,8 +322,8 @@ namespace PortableRegistrator
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(100, 34);
             this.btnConfig.TabIndex = 28;
-            this.btnConfig.Text = "配置文件";
-            this.toolTip1.SetToolTip(this.btnConfig, "程序类型设置");
+            this.btnConfig.Text = PortableRegistrator.Properties.Resources.btnConfig;
+            this.toolTip1.SetToolTip(this.btnConfig, PortableRegistrator.Properties.Resources.ProgramTypes);
             this.btnConfig.UseVisualStyleBackColor = true;
             this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
@@ -334,7 +334,7 @@ namespace PortableRegistrator
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 34);
             this.button1.TabIndex = 29;
-            this.button1.Text = "重选";
+            this.button1.Text = PortableRegistrator.Properties.Resources.btnReset;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -347,7 +347,7 @@ namespace PortableRegistrator
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 17);
             this.label4.TabIndex = 30;
-            this.label4.Text = "打开参数：";
+            this.label4.Text = PortableRegistrator.Properties.Resources.OpenParameter;
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -360,7 +360,7 @@ namespace PortableRegistrator
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 17);
             this.label10.TabIndex = 31;
-            this.label10.Text = "属性参数：";
+            this.label10.Text = PortableRegistrator.Properties.Resources.PropertiesParameter;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
@@ -441,7 +441,7 @@ namespace PortableRegistrator
             this.btnRemoveAppType.Name = "btnRemoveAppType";
             this.btnRemoveAppType.Size = new System.Drawing.Size(31, 31);
             this.btnRemoveAppType.TabIndex = 35;
-            this.btnRemoveAppType.Text = "X";
+            this.btnRemoveAppType.Text = PortableRegistrator.Properties.Resources.btnRemoveAppType;
             this.btnRemoveAppType.UseVisualStyleBackColor = true;
             this.btnRemoveAppType.Click += new System.EventHandler(this.btnRemoveAppType_Click);
             // 
@@ -452,7 +452,7 @@ namespace PortableRegistrator
             this.cbRemoveSuffix.Name = "cbRemoveSuffix";
             this.cbRemoveSuffix.Size = new System.Drawing.Size(97, 25);
             this.cbRemoveSuffix.TabIndex = 34;
-            this.cbRemoveSuffix.Text = "移除后缀";
+            this.cbRemoveSuffix.Text = PortableRegistrator.Properties.Resources.RemoveSuffix;
             this.cbRemoveSuffix.UseVisualStyleBackColor = true;
             this.cbRemoveSuffix.CheckedChanged += new System.EventHandler(this.cbRemoveSuffix_CheckedChanged);
             // 
@@ -470,31 +470,6 @@ namespace PortableRegistrator
             this.panel3.TabIndex = 35;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLabel1.Location = new System.Drawing.Point(554, 13);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(176, 17);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "XTsat/PortableRegistrator_zh";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(469, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "汉化发布在";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // llGithub
             // 
             this.llGithub.AutoSize = true;
@@ -504,7 +479,7 @@ namespace PortableRegistrator
             this.llGithub.Size = new System.Drawing.Size(175, 17);
             this.llGithub.TabIndex = 0;
             this.llGithub.TabStop = true;
-            this.llGithub.Text = "SiL3NC3/PortableRegistrator";
+            this.llGithub.Text = PortableRegistrator.Properties.Resources.GitHub1;
             this.llGithub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.llGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llGithub_LinkClicked);
             // 
@@ -516,8 +491,33 @@ namespace PortableRegistrator
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(283, 17);
             this.label13.TabIndex = 1;
-            this.label13.Text = "用💙打造的便携式软件 - 源代码发布在 \r\n";
+            this.label13.Text = PortableRegistrator.Properties.Resources.AuthorRemarks;
             this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.linkLabel1.Location = new System.Drawing.Point(554, 13);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(176, 17);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = PortableRegistrator.Properties.Resources.GitHub2;
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(469, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 17);
+            this.label6.TabIndex = 2;
+            this.label6.Text = PortableRegistrator.Properties.Resources.AuthorRemarks2;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label14
             // 
@@ -527,7 +527,7 @@ namespace PortableRegistrator
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(174, 30);
             this.label14.TabIndex = 34;
-            this.label14.Text = "便携程序注册器";
+            this.label14.Text = PortableRegistrator.Properties.Resources.MainTitle;
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
@@ -553,7 +553,7 @@ namespace PortableRegistrator
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(60, 34);
             this.btnAdd.TabIndex = 35;
-            this.btnAdd.Text = "添加";
+            this.btnAdd.Text = PortableRegistrator.Properties.Resources.btnAdd;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -615,7 +615,7 @@ namespace PortableRegistrator
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PORTABLE Registrator";
+            this.Text = PortableRegistrator.Properties.Resources.SoftwareName;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

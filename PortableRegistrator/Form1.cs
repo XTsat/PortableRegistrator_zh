@@ -7,7 +7,9 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace PortableRegistrator
 {
@@ -21,6 +23,10 @@ namespace PortableRegistrator
         // CONSTRUCTOR
         public Form1()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-CN");
+            // 英文
+            // System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+
             InitializeComponent();
 
             try
@@ -131,13 +137,13 @@ namespace PortableRegistrator
         private void OpenConfig()
         {
             MessageBoxEx.Show(this,
-                "您可以在此处设置所使用的程序类型。" + Environment.NewLine + Environment.NewLine +
-                "更改配置后请重新启动程序！" + Environment.NewLine +
-                "还要考虑再次注册您的便携式设备。" + Environment.NewLine +
-                "配置时要非常小心，否则可能会弄乱注册表。" + Environment.NewLine + Environment.NewLine +
-                "如果您需要新的配置文件，只需将其删除并重新启动该工具即可。" + Environment.NewLine + Environment.NewLine +
-                "来自开发者的问候 :)",
-                "HINTS",
+                PortableRegistrator.Properties.Resources.msgHINTS1 + Environment.NewLine + Environment.NewLine +
+                PortableRegistrator.Properties.Resources.msgHINTS2 + Environment.NewLine +
+                PortableRegistrator.Properties.Resources.msgHINTS3 + Environment.NewLine +
+                PortableRegistrator.Properties.Resources.msgHINTS4 + Environment.NewLine + Environment.NewLine +
+                PortableRegistrator.Properties.Resources.msgHINTS5 + Environment.NewLine + Environment.NewLine +
+                PortableRegistrator.Properties.Resources.msgHINTS6,
+                PortableRegistrator.Properties.Resources.msgHINTS,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             Process.Start(_config.ConfigFile);
@@ -174,21 +180,37 @@ namespace PortableRegistrator
 
                 if (errors.Count == 0)
                 {
+                    // 从.resx读取固定多语言文本
+                    string msg1 = PortableRegistrator.Properties.Resources.msgRegister1;
+                    string msg2 = PortableRegistrator.Properties.Resources.msgRegister2;
+                    string msgTitle = PortableRegistrator.Properties.Resources.msgRegister;
+
+                    // 拼接最终弹窗文本
+                    string message = $"{tbxProgramName.Text}{msg1}{Environment.NewLine}{msg2}";
+
+                    // 显示弹窗
                     MessageBoxEx.Show(this,
-                        $"{tbxProgramName.Text} 注册成功！{Environment.NewLine}" +
-                        $"现在应用可以快捷打开了 :)",
-                        "注册",
+                        message,
+                        msgTitle,
                         MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
+                        MessageBoxIcon.Information
+                    );
                 }
                 else
                 {
-                    MessageBoxEx.Show(this,
-                        $"注册 '{tbxProgramName.Text}' 失败！{Environment.NewLine}" +
-                        $"错误： {Environment.NewLine}" +
-                        $"{string.Join(Environment.NewLine, errors.ToArray())}",
-                        "注册",
-                        MessageBoxButtons.OK,
+                    // 读取资源文本
+                    string msg3 = PortableRegistrator.Properties.Resources.msgRegister3;
+                    string msg4 = PortableRegistrator.Properties.Resources.msgRegister4;
+                    string msgTitle = PortableRegistrator.Properties.Resources.msgRegister;
+
+                    string errorList = string.Join(Environment.NewLine, errors.ToArray());
+                    string message = $"{string.Format(msg3, tbxProgramName.Text)}{Environment.NewLine}{msg4}{Environment.NewLine}{errorList}";
+
+                    // 显示弹窗
+                    MessageBoxEx.Show(this, 
+                        message, 
+                        msgTitle, 
+                        MessageBoxButtons.OK, 
                         MessageBoxIcon.Error);
                 }
 
@@ -220,20 +242,31 @@ namespace PortableRegistrator
 
                 if (errors.Count == 0)
                 {
+                    string msg1 = PortableRegistrator.Properties.Resources.msgUnRegister1;
+                    string msgTitle = PortableRegistrator.Properties.Resources.msgUnRegister;
+
+                    string message = $"{tbxProgramName.Text}{msg1}";
+
                     MessageBoxEx.Show(this,
-                        $"{tbxProgramName.Text} 取消注册成功.",
-                        "取消注册",
+                        message,
+                        msgTitle,
                         MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
+                        MessageBoxIcon.Information
+                    );
                 }
                 else
                 {
+                    string msg2 = PortableRegistrator.Properties.Resources.msgUnRegister2;
+                    string msgTitle = PortableRegistrator.Properties.Resources.msgUnRegister;
+
+                    string message = $"{msg2}{tbxProgramName.Text}{Environment.NewLine}{string.Join(Environment.NewLine, errors.ToArray())}";
+
                     MessageBoxEx.Show(this,
-                        $"取消注册 '{tbxProgramName.Text}' 失败。查看错误： {Environment.NewLine}" +
-                        $"{string.Join(Environment.NewLine, errors.ToArray())}",
-                        "取消注册",
+                        message,
+                        msgTitle,
                         MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
+                        MessageBoxIcon.Information
+                    );
                 }
             }
             catch (Exception ex)
@@ -245,8 +278,14 @@ namespace PortableRegistrator
         private void ProcessError(Exception ex)
         {
             var msg = ex.Message + Environment.NewLine + ex.StackTrace;
+            string error = PortableRegistrator.Properties.Resources.msgErrorOccurred;
             SimpleLogger.Instance.Error(msg);
-            MessageBox.Show(msg, "An Error occurred :(", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(
+                msg, 
+                error, 
+                MessageBoxButtons.OK, 
+                MessageBoxIcon.Error
+                );
         }
         #endregion
 
@@ -271,7 +310,17 @@ namespace PortableRegistrator
                 {
                     _config.AppTypes.Add(dialog.AppType);
                     _config.Save();
-                    MessageBoxEx.Show($"新程序类型 '{dialog.AppType}' 已创建.", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string msg = PortableRegistrator.Properties.Resources.msgNewProgramType;
+                    string Success = PortableRegistrator.Properties.Resources.msgSuccess;
+
+                    string message = $"{msg}{dialog.AppType}";
+
+                    MessageBoxEx.Show(
+                        message,
+                        Success,
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Information
+                        );
                     SetProgramTypes();
                 }
             }
@@ -282,9 +331,15 @@ namespace PortableRegistrator
                 !String.IsNullOrWhiteSpace(cbProgramType.SelectedItem.ToString()))
             {
                 var progType = cbProgramType.SelectedItem.ToString();
+
+                string msg = PortableRegistrator.Properties.Resources.msgDeleteProgramType1;
+                string msgTitle = PortableRegistrator.Properties.Resources.msgDeleteProgramType;
+
+                string message = $"{msg}{Environment.NewLine}{progType}?";
+
                 DialogResult dialogResult = MessageBoxEx.Show(this,
-                    "您确实要永久删除程序类型： " + Environment.NewLine + $"'{progType}' ?",
-                    "删除程序类型",
+                    message,
+                    msgTitle,
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
@@ -307,10 +362,13 @@ namespace PortableRegistrator
         }
         private void btnUnregister_Click(object sender, EventArgs e)
         {
+            string msg = PortableRegistrator.Properties.Resources.msgUnRegister3;
+            string msgTitle = PortableRegistrator.Properties.Resources.msgUnRegister;
+
+            string message = $"{msg}{Environment.NewLine}{cbRegisteredPortables.Text}";
             DialogResult dialogResult = MessageBoxEx.Show(this,
-                $"您确定要取消注册 {Environment.NewLine}" +
-                $"'{cbRegisteredPortables.Text}' 吗?",
-                "取消注册",
+                msg,
+                msgTitle,
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
@@ -346,6 +404,10 @@ namespace PortableRegistrator
         {
             Process.Start("https://github.com/sil3nc3/PortableRegistrator");
         }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/XTsat/PortableRegistrator_zh");
+        }
 
         // EVENTS - PORTABLE Suffix checkbox
         private void cbRemoveSuffix_CheckedChanged(object sender, EventArgs e)
@@ -354,12 +416,17 @@ namespace PortableRegistrator
 
             if (_removePortableSuffix)
             {
+                string msg1 = PortableRegistrator.Properties.Resources.msgSuffix1;
+                string msg2 = PortableRegistrator.Properties.Resources.msgSuffix2;
+                string msg3 = PortableRegistrator.Properties.Resources.msgSuffix3;
+                string msg4 = PortableRegistrator.Properties.Resources.msgSuffix4;
+                string msgTitle = PortableRegistrator.Properties.Resources.msgSuffix;
+
+                string message = $"{msg1}{Environment.NewLine}{msg2}{Environment.NewLine}{Environment.NewLine}{msg3}{Environment.NewLine}{msg4}";
+
                 DialogResult dialogResult = MessageBoxEx.Show(this,
-                    "此选项从注册条目中删除“PORTABLE”后缀。" + Environment.NewLine +
-                    "然后 PortableRegistrator 无法再检测到该注册表项！ " + Environment.NewLine + Environment.NewLine +
-                    "如果您是高级用户，请保留此选项！" + Environment.NewLine +
-                    "不建议默认使用！",
-                    "!!!注意!!!",
+                    message,
+                    msgTitle,
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
@@ -379,7 +446,7 @@ namespace PortableRegistrator
             }
             else
             {
-                labelPortableSuffix.Text = "PORTABLE\"";
+                labelPortableSuffix.Text = PortableRegistrator.Properties.Resources.PortableSuffix;
                 cbRemoveSuffix.Checked = false;
             }
 
@@ -528,9 +595,5 @@ namespace PortableRegistrator
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://github.com/XTsat/PortableRegistrator_zh");
-        }
     }
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,185 +117,176 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Wallpaperfx_3d_Bluefx_Desktop_Usb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wallpaperfx-3d-Bluefx-Desktop-Usb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wallpaperfx_3d_Bluefx_Desktop_Usb1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wallpaperfx-3d-Bluefx-Desktop-Usb.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PortableExecutable" xml:space="preserve">
-    <value>Portable executable</value>
-  </data>
   <data name="btnRegister" xml:space="preserve">
-    <value>REGISTER</value>
+    <value>注册</value>
   </data>
   <data name="ProgramType" xml:space="preserve">
-    <value>Program Type:</value>
+    <value>程序类型：</value>
   </data>
   <data name="ProgramName" xml:space="preserve">
-    <value>Program Name:</value>
-  </data>
-  <data name="PortableSuffix" xml:space="preserve">
-    <value>PORTABLE\"</value>
+    <value>程序名称：</value>
   </data>
   <data name="RegisteredPortables" xml:space="preserve">
-    <value>Registered Portables:</value>
+    <value>已注册程序：</value>
   </data>
   <data name="btnUnregister" xml:space="preserve">
-    <value>UNREGISTER</value>
+    <value>取消注册</value>
   </data>
   <data name="UnregisterPortableApp" xml:space="preserve">
-    <value>Unregister portable App</value>
+    <value>注销便携式应用程序</value>
   </data>
   <data name="RegisterPortableApp" xml:space="preserve">
-    <value>Register a new portable app</value>
+    <value>注册新的便携式应用程序</value>
   </data>
   <data name="FileAssociations" xml:space="preserve">
-    <value>FileAssociations:</value>
+    <value>文件关联：</value>
   </data>
   <data name="URLAssociations" xml:space="preserve">
-    <value>URLAssociations:</value>
+    <value>URL 关联：</value>
   </data>
   <data name="btnConfig" xml:space="preserve">
-    <value>CONFIG</value>
+    <value>配置文件</value>
   </data>
   <data name="ProgramTypes" xml:space="preserve">
-    <value>Program Types setup</value>
+    <value>程序类型设置</value>
   </data>
   <data name="btnReset" xml:space="preserve">
-    <value>RESET</value>
+    <value>重选</value>
   </data>
   <data name="OpenParameter" xml:space="preserve">
-    <value>OpenParameter:</value>
+    <value>打开参数：</value>
   </data>
   <data name="PropertiesParameter" xml:space="preserve">
-    <value>PropertiesParameter:</value>
+    <value>属性参数：</value>
   </data>
   <data name="btnRemoveAppType" xml:space="preserve">
     <value>X</value>
   </data>
   <data name="RemoveSuffix" xml:space="preserve">
-    <value>remove Suffix</value>
+    <value>移除后缀</value>
   </data>
   <data name="GitHub1" xml:space="preserve">
     <value>SiL3NC3/PortableRegistrator</value>
   </data>
   <data name="AuthorRemarks" xml:space="preserve">
-    <value>Made with 💙 for Portable Software - Source code and release available at \r\n</value>
+    <value>用💙打造的便携式软件 - 源代码发布在 \r\n</value>
   </data>
   <data name="GitHub2" xml:space="preserve">
     <value>XTsat/PortableRegistrator_zh</value>
   </data>
   <data name="AuthorRemarks2" xml:space="preserve">
-    <value>i18n support provided by</value>
+    <value>汉化发布在</value>
   </data>
   <data name="MainTitle" xml:space="preserve">
-    <value>PORTABLE REGISTRATOR</value>
+    <value>便携程序注册器</value>
   </data>
   <data name="btnAdd" xml:space="preserve">
-    <value>ADD</value>
+    <value>添加</value>
   </data>
   <data name="SoftwareName" xml:space="preserve">
-    <value>PORTABLE Registrator</value>
+    <value>便携软件注册器</value>
   </data>
   <data name="msgHINTS1" xml:space="preserve">
-    <value>Here you can setup the used Program Types.</value>
+    <value>您可以在此处设置所使用的程序类型。</value>
   </data>
   <data name="msgHINTS2" xml:space="preserve">
-    <value>Please restart the program after changing the configuration!</value>
+    <value>更改配置后请重新启动程序！</value>
   </data>
   <data name="msgHINTS3" xml:space="preserve">
-    <value>Also think about to register your Portable again.</value>
+    <value>还要考虑再次注册您的便携式设备。</value>
   </data>
   <data name="msgHINTS4" xml:space="preserve">
-    <value>Be very careful with the configuration, you can mess up the registry.</value>
+    <value>配置时要非常小心，否则可能会弄乱注册表。</value>
   </data>
   <data name="msgHINTS5" xml:space="preserve">
-    <value>If you need a fresh configuration file, just delete it and restart the tool.</value>
+    <value>如果您需要新的配置文件，只需将其删除并重新启动该工具即可。</value>
   </data>
   <data name="msgHINTS6" xml:space="preserve">
-    <value>Greetings from the developer. ;)</value>
+    <value>来自开发者的问候 :)</value>
   </data>
   <data name="msgHINTS" xml:space="preserve">
-    <value>HINTS</value>
+    <value>提示</value>
   </data>
   <data name="msgRegister" xml:space="preserve">
-    <value>REGISTER</value>
+    <value>注册</value>
   </data>
   <data name="msgRegister1" xml:space="preserve">
-    <value>successfully registered!</value>
+    <value>注册成功！</value>
   </data>
   <data name="msgRegister2" xml:space="preserve">
-    <value>Have fun and enjoy. ;)</value>
+    <value>现在应用可以快捷打开了 :)</value>
   </data>
   <data name="msgRegister3" xml:space="preserve">
-    <value>Registration of '{0}' unsuccessful!</value>
+    <value>注册 '{0}' 失败！</value>
   </data>
   <data name="msgRegister4" xml:space="preserve">
-    <value>Errors:</value>
+    <value>错误：</value>
   </data>
   <data name="msgUnRegister" xml:space="preserve">
-    <value>UNREGISTER</value>
+    <value>取消注册</value>
   </data>
   <data name="msgUnRegister1" xml:space="preserve">
-    <value>got successfully unregistered.</value>
+    <value>取消注册成功。</value>
   </data>
   <data name="msgUnRegister2" xml:space="preserve">
-    <value>Deleting registration of '{0}' unsuccessful. See Errors:</value>
+    <value>取消注册 '{0}' 失败。查看错误：</value>
   </data>
   <data name="msgErrorOccurred" xml:space="preserve">
-    <value>An Error occurred :(</value>
+    <value>发生错误 :(</value>
   </data>
   <data name="msgNewProgramType" xml:space="preserve">
-    <value>New Program-Type '{0}' created.</value>
+    <value>新程序类型 '{0}' 已创建.</value>
   </data>
   <data name="msgSuccess" xml:space="preserve">
-    <value>Success</value>
+    <value>成功</value>
   </data>
   <data name="msgDeleteProgramType1" xml:space="preserve">
-    <value>Do you really want to permanently delete Program-Type:</value>
+    <value>您确实要永久删除程序类型：</value>
   </data>
   <data name="msgDeleteProgramType" xml:space="preserve">
-    <value>Delete Program-Type</value>
+    <value>删除程序类型</value>
   </data>
   <data name="msgUnRegister3" xml:space="preserve">
-    <value>Are you sure to delete the registration for '{0}' '{1}' ?</value>
+    <value>您确定要取消注册 '{0}' '{1}' 吗?</value>
   </data>
   <data name="msgSuffix" xml:space="preserve">
-    <value>!!!ATTENTION!!!</value>
+    <value>!!!注意!!!</value>
   </data>
   <data name="msgSuffix1" xml:space="preserve">
-    <value>This option removes the 'PORTABLE' Suffix from the registration entry.</value>
+    <value>此选项从注册条目中删除“PORTABLE”后缀。</value>
   </data>
   <data name="msgSuffix2" xml:space="preserve">
-    <value>Then PortableRegistrator cannot detect this registry entry anymore!</value>
+    <value>然后 PortableRegistrator 无法再检测到该注册表项！</value>
   </data>
   <data name="msgSuffix3" xml:space="preserve">
-    <value>Just leave this option, if you are a power user!</value>
+    <value>如果您是高级用户，请保留此选项！</value>
   </data>
   <data name="msgSuffix4" xml:space="preserve">
-    <value>This is NOT recommended for default use!</value>
-  </data>
-  <data name="msgErrorProgramType" xml:space="preserve">
-    <value>An unexpected Error occurred. '{0}' Cannot create Program-Type.</value>
+    <value>不建议默认使用！</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>确定</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>取消</value>
   </data>
   <data name="FileAssociationsHint" xml:space="preserve">
-    <value>Each line
-one Extension
-with leading \'.\'</value>
+    <value>每行一个扩展
+名，以 `.` 开头</value>
   </data>
   <data name="URLAssociationsHint" xml:space="preserve">
-    <value>Each line
-one URL</value>
+    <value>每行一个 URL</value>
   </data>
   <data name="AddProgramTypeTitle" xml:space="preserve">
-    <value>Add new Program-Type</value>
+    <value>添加新的程序类型</value>
+  </data>
+  <data name="PortableSuffix" xml:space="preserve">
+    <value>PORTABLE\"</value>
+  </data>
+  <data name="PortableExecutable" xml:space="preserve">
+    <value>程序位置：</value>
+  </data>
+  <data name="msgErrorProgramType" xml:space="preserve">
+    <value>发生意外错误。'{0}' 无法创建程序类型</value>
   </data>
 </root>
