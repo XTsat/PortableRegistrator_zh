@@ -256,10 +256,10 @@
     <value>此选项从注册条目中删除“PORTABLE”后缀。</value>
   </data>
   <data name="msgSuffix2" xml:space="preserve">
-    <value>然后 PortableRegistrator 无法再检测到该注册表项！</value>
+    <value>软件将无法再检测到该注册表项！</value>
   </data>
   <data name="msgSuffix3" xml:space="preserve">
-    <value>如果您是高级用户，请保留此选项！</value>
+    <value>如果您不是高级用户，请保留此选项！</value>
   </data>
   <data name="msgSuffix4" xml:space="preserve">
     <value>不建议默认使用！</value>

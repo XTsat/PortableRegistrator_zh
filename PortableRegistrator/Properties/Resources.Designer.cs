@@ -441,15 +441,6 @@ namespace PortableRegistrator.Properties {
         }
         
         /// <summary>
-        ///   查找类似 new System.Drawing.Size(95, 21) 的本地化字符串。
-        /// </summary>
-        internal static string NewSystemDrawingSize9521 {
-            get {
-                return ResourceManager.GetString("NewSystemDrawingSize9521", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 OK 的本地化字符串。
         /// </summary>
         internal static string OK {
